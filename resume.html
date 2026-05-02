@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume | Khizer Ahmed Khan</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #000;
+            --secondary: #666;
+            --accent: #0070f3;
+            --border: #eaeaea;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--primary);
+            background: #fff;
+            padding: 40px 0;
+            line-height: 1.6;
+        }
+        .resume-container {
+            max-width: 850px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 40px;
+            border: 1px solid var(--border);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        }
+        header {
+            text-align: center;
+            border-bottom: 2px solid var(--primary);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        header h1 {
+            font-weight: 800;
+            letter-spacing: -1px;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+        .contact-info {
+            font-size: 0.9rem;
+            color: var(--secondary);
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        .contact-info a {
+            color: var(--secondary);
+            text-decoration: none;
+        }
+        section {
+            margin-bottom: 30px;
+        }
+        section h2 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .job-title {
+            display: flex;
+            justify-content: space-between;
+            font-weight: 700;
+            margin-bottom: 5px;
+            font-size: 1rem;
+        }
+        .job-details {
+            color: var(--secondary);
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+            list-style-type: square;
+        }
+        .skill-group {
+            display: grid;
+            grid-template-columns: 120px 1fr;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+        .skill-group strong {
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            color: var(--secondary);
+        }
+        .tags span {
+            background: #f5f5f5;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            margin-right: 5px;
+            display: inline-block;
+            margin-bottom: 5px;
+            border: 1px solid #eee;
+        }
+        @media print {
+            body { padding: 0; }
+            .resume-container { border: none; box-shadow: none; padding: 0; }
+            .no-print { display: none; }
+        }
+        .btn-print {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: var(--primary);
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 6px;
+            font-weight: 600;
+            cursor: pointer;
+            z-index: 1000;
+        }
+    </style>
+</head>
+<body>
+
+    <button class="btn-print no-print" onclick="window.print()">
+        <i class="fas fa-print me-2"></i> Print PDF
+    </button>
+
+    <div class="resume-container">
+        <header>
+            <h1>Khizer Ahmed Khan</h1>
+            <div class="contact-info">
+                <a href="https://github.com/KhizerAhmedDev" target="_blank"><i class="fab fa-github"></i> github.com/KhizerAhmedDev</a>
+                <a href="https://linkedin.com/in/khizer-ahmed-8212093a1" target="_blank"><i class="fab fa-linkedin"></i> linkedin.com/in/khizer-ahmed-8212093a1</a>
+                <a href="mailto:khizerahmed.dev@gmail.com"><i class="fas fa-envelope"></i> khizerahmed.dev@gmail.com</a>
+                <span><i class="fas fa-phone"></i> +92 317 966458</span>
+                <span><i class="fas fa-map-marker-alt"></i> Karachi, Sindh, Pakistan</span>
+            </div>
+        </header>
+
+        <section>
+            <h2>Professional Summary</h2>
+            <p>Aspiring Junior Software Developer with a strong technical foundation in the PHP and Laravel ecosystem. Passionate about architecting scalable web applications and optimizing database systems. Currently pursuing advanced diplomas and seeking a Junior Developer role to contribute high-quality code and drive impactful digital solutions.</p>
+        </section>
+
+        <section>
+            <h2>Technical Skills</h2>
+            <div class="skill-group">
+                <strong>Backend</strong>
+                <div class="tags">
+                    <span>PHP</span> <span>Laravel</span> <span>MySQL</span> <span>T-SQL</span> <span>PDO</span>
+                </div>
+            </div>
+            <div class="skill-group">
+                <strong>Frontend</strong>
+                <div class="tags">
+                    <span>HTML5</span> <span>CSS3</span> <span>JavaScript</span> <span>Bootstrap 5</span>
+                </div>
+            </div>
+            <div class="skill-group">
+                <strong>Tools</strong>
+                <div class="tags">
+                    <span>Git/GitHub</span> <span>WordPress</span> <span>XAMPP</span> <span>Composer</span>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Academic Projects</h2>
+            
+            <div class="project-item">
+                <div class="job-title">
+                    <span>SmartPOS - Inventory Management System</span>
+                    <span>PHP / MySQL</span>
+                </div>
+                <ul class="job-details">
+                    <li>Developed an inventory tracking system for retail stores with barcode integration.</li>
+                    <li>Implemented sales reporting and real-time stock updates using Core PHP.</li>
+                </ul>
+            </div>
+
+            <div class="project-item">
+                <div class="job-title">
+                    <span>EliteMarket - E-Commerce Platform</span>
+                    <span>PHP / AJAX</span>
+                </div>
+                <ul class="job-details">
+                    <li>Built a multi-vendor storefront featuring vendor dashboards and secure order flows.</li>
+                    <li>Optimized user experience with AJAX-based search and cart updates.</li>
+                </ul>
+            </div>
+
+            <div class="project-item">
+                <div class="job-title">
+                    <span>TaskCloud - Productivity Tool</span>
+                    <span>JavaScript</span>
+                </div>
+                <ul class="job-details">
+                    <li>Created a Kanban-style task board with drag-and-drop state persistence.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Education</h2>
+            <div class="job-title">
+                <span>Diploma in Software Development Engineering</span>
+                <span>Ongoing (2nd Year)</span>
+            </div>
+            <div class="job-details">
+                GCT College Karachi | Expected Completion: 2027
+            </div>
+
+            <div class="job-title">
+                <span>Advanced Diploma in Software Engineering</span>
+                <span>Ongoing</span>
+            </div>
+            <div class="job-details">
+                Aptech Karachi | Currently in 3rd semester.
+            </div>
+        </section>
+
+        <section>
+            <h2>Languages</h2>
+            <p>Urdu (Native), English (Professional)</p>
+        </section>
+
+    </div>
+
+</body>
+</html>

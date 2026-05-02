@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khizer Ahmed Khan | Software Developer</title>
+    
+    <!-- SEO & ATS Optimization -->
+    <meta name="description" content="Khizer Ahmed Khan - Software Development student skilled in PHP, Laravel, and Web Technologies. Focused on building real-world projects.">
+    <meta name="keywords" content="Software Developer, PHP, Laravel, Web Development, Karachi, Sindh, Pakistan">
+    
+    <!-- External Assets -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme">
+
+    <nav class="navbar">
+        <div class="container nav-content">
+            <a href="#" class="logo">KHIZER<span>.</span></a>
+            <div class="nav-links">
+                <a href="#work">Projects</a>
+                <a href="#about">About</a>
+                <a href="#contact" class="btn-contact">Contact</a>
+                <button id="themeToggle" class="theme-btn"><i class="fas fa-moon"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero">
+            <div class="container">
+                <div class="badge-container" data-aos="fade-down">
+                    <span class="badge">Open to Junior Developer Roles</span>
+                </div>
+                <h1 data-aos="fade-up" data-aos-delay="100">Building <span class="gradient-text">Practical</span> Digital Solutions.</h1>
+                <p class="lead" data-aos="fade-up" data-aos-delay="200">
+                    Aspiring Junior Software Developer specialized in building robust web ecosystems. Currently seeking opportunities to apply my skills in PHP, Laravel, and MySQL to deliver scalable, high-impact digital solutions.
+                </p>
+                <div class="hero-actions" data-aos="fade-up" data-aos-delay="300">
+                    <a href="#work" class="btn-primary">View Projects</a>
+                    <a href="resume.html" class="btn-secondary" target="_blank">View Resume <i class="fas fa-file-alt ms-2"></i></a>
+                </div>
+            </div>
+            <div class="hero-glow"></div>
+        </section>
+
+        <!-- Bento Grid Projects -->
+        <section id="work" class="projects">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2>Recent Projects</h2>
+                    <p>A collection of web applications focused on solving business problems.</p>
+                </div>
+
+                <div class="bento-grid">
+                    <!-- Project 1: SmartPOS -->
+                    <div class="bento-item tall" data-aos="zoom-in">
+                        <div class="project-card">
+                            <div class="card-content">
+                                <span class="project-tag">Inventory System</span>
+                                <h3>SmartPOS</h3>
+                                <p class="project-desc">A retail management system featuring barcode integration and sales tracking.</p>
+                                <div class="project-tech">
+                                    <span>PHP</span> <span>MySQL</span> <span>Bootstrap</span>
+                                </div>
+                                <div class="project-links mt-4">
+                                    <a href="../SmartPOS/" class="btn-project">Demo <i class="fas fa-external-link-alt"></i></a>
+                                    <a href="https://github.com/KhizerAhmedDev" target="_blank" class="btn-github"><i class="fab fa-github"></i> Code</a>
+                                </div>
+                            </div>
+                            <div class="card-visual bg-pos">
+                                <i class="fas fa-cash-register"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: EliteMarket -->
+                    <div class="bento-item wide" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="project-card">
+                            <div class="card-content">
+                                <span class="project-tag">E-Commerce</span>
+                                <h3>EliteMarket Pro</h3>
+                                <p class="project-desc">Multi-vendor marketplace with secure checkout and dashboard flows.</p>
+                                <div class="project-tech">
+                                    <span>PHP PDO</span> <span>AJAX</span> <span>JavaScript</span>
+                                </div>
+                                <div class="project-links mt-4">
+                                    <a href="../EliteMarket/" class="btn-project">Demo <i class="fas fa-external-link-alt"></i></a>
+                                    <a href="https://github.com/KhizerAhmedDev" target="_blank" class="btn-github"><i class="fab fa-github"></i> Code</a>
+                                </div>
+                            </div>
+                            <div class="card-visual bg-market">
+                                <i class="fas fa-shopping-bag"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3: TaskCloud -->
+                    <div class="bento-item" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="project-card">
+                            <div class="card-content">
+                                <span class="project-tag">Productivity</span>
+                                <h3>TaskCloud</h3>
+                                <p class="project-desc">Kanban board with drag-and-drop task management.</p>
+                                <div class="project-links mt-3">
+                                    <a href="../TaskCloud/" class="btn-project">Demo <i class="fas fa-external-link-alt"></i></a>
+                                    <a href="https://github.com/KhizerAhmedDev" target="_blank" class="btn-github"><i class="fab fa-github"></i> Code</a>
+                                </div>
+                            </div>
+                            <div class="card-visual bg-task">
+                                <i class="fas fa-tasks"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 4: HealthSync -->
+                    <div class="bento-item" data-aos="zoom-in" data-aos-delay="300">
+                        <div class="project-card">
+                            <div class="card-content">
+                                <span class="project-tag">Healthcare</span>
+                                <h3>HealthSync</h3>
+                                <p class="project-desc">Medical portal for appointment scheduling and records.</p>
+                                <div class="project-links mt-3">
+                                    <a href="../HealthSync/" class="btn-project">Demo <i class="fas fa-external-link-alt"></i></a>
+                                    <a href="https://github.com/KhizerAhmedDev" target="_blank" class="btn-github"><i class="fab fa-github"></i> Code</a>
+                                </div>
+                            </div>
+                            <div class="card-visual bg-health">
+                                <i class="fas fa-user-md"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 5: EduCore -->
+                    <div class="bento-item wide" data-aos="zoom-in" data-aos-delay="400">
+                        <div class="project-card">
+                            <div class="card-content">
+                                <span class="project-tag">EdTech</span>
+                                <h3>EduCore Academy</h3>
+                                <p class="project-desc">LMS for student enrollment and institutional management.</p>
+                                <div class="project-tech">
+                                    <span>Laravel</span> <span>MySQL</span>
+                                </div>
+                                <div class="project-links mt-4">
+                                    <a href="../EduCore/" class="btn-project">Demo <i class="fas fa-external-link-alt"></i></a>
+                                    <a href="https://github.com/KhizerAhmedDev" target="_blank" class="btn-github"><i class="fab fa-github"></i> Code</a>
+                                </div>
+                            </div>
+                            <div class="card-visual bg-edu">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About / Education -->
+        <section id="about" class="about">
+            <div class="container grid-2">
+                <div class="about-text" data-aos="fade-right">
+                    <span class="section-tag">About Me</span>
+                    <h2>A Passionate Developer in <span class="text-primary">Training.</span></h2>
+                    <p>Motivated Software Development student currently pursuing diplomas from GCT and Aptech. Skilled in PHP, Laravel, and web development fundamentals. Recently learned T-SQL and continuously learning new technologies to build real-world projects.</p>
+                    
+                    <div class="experience-list">
+                        <div class="exp-item">
+                            <span class="year">2027</span>
+                            <div class="exp-info">
+                                <h4>Diploma in Software Development Engineering</h4>
+                                <p>GCT College Karachi | 2nd Year (Ongoing) | Expected: 2027</p>
+                            </div>
+                        </div>
+                        <div class="exp-item">
+                            <span class="year">Ongoing</span>
+                            <div class="exp-info">
+                                <h4>Advanced Diploma in Software Engineering</h4>
+                                <p>Aptech | Completed 2 semesters, currently in 3rd semester.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-grid" data-aos="fade-left">
+                    <div class="skill-group">
+                        <h5>Frontend</h5>
+                        <div class="tags">
+                            <span>HTML5</span> <span>CSS3</span> <span>JavaScript</span> <span>Bootstrap 5</span>
+                        </div>
+                    </div>
+                    <div class="skill-group">
+                        <h5>Backend</h5>
+                        <div class="tags">
+                            <span>PHP</span> <span>Laravel</span> <span>MySQL</span> <span>T-SQL</span> <span>PDO</span>
+                        </div>
+                    </div>
+                    <div class="skill-group">
+                        <h5>Tools</h5>
+                        <div class="tags">
+                            <span>Git</span> <span>WordPress</span> <span>XAMPP</span> <span>GitHub</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="contact">
+            <div class="container text-center">
+                <h2 data-aos="fade-up">Get In Touch</h2>
+                <p class="lead mb-5" data-aos="fade-up" data-aos-delay="100">Feel free to reach out for collaborations or opportunities.</p>
+                <div class="contact-footer" data-aos="fade-up" data-aos-delay="200">
+                    <p class="fw-bold mb-1">Khizer Ahmed Khan</p>
+                    <p class="mb-1">Phone: +92 317 966458</p>
+                    <p class="mb-3 text-muted">Karachi, Sindh, Pakistan</p>
+                    <a href="mailto:khizerahmed.dev@gmail.com" class="email-link">khizerahmed.dev@gmail.com</a>
+                    <div class="socials mt-4">
+                        <a href="https://github.com/KhizerAhmedDev" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com/in/khizer-ahmed-8212093a1" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2026 Khizer Ahmed Khan. Built with Passion.</p>
+            <p>Clean & Professional Design.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init({duration: 800, once: true});</script>
+    <script src="script.js"></script>
+</body>
+</html>
